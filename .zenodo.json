@@ -1,0 +1,51 @@
+{
+  "creators": [
+    {
+      "name": "Hughes, Tyler B.",
+      "orcid": "0000-0001-6221-9014"
+    }
+  ],
+  "title": "How Many Prime Factors Could a Counterexample to Giuga's Conjecture Have?",
+  "description": "Lean 4 (v4.35.0) + Mathlib formalization of structural theorems, edge-dual linear-programming relaxations (Lemma W and refinements), Lemma C, local obstruction rules, unconditional counterexample lower bounds, explicit ceiling witnesses, and conditional transfer theorems for Giuga's conjecture. Across 21 compared theorems (zero sorry, zero native_decide, standard axioms only), Lean 4 proves unconditionally that every Giuga counterexample has at least 578 distinct prime factors and exceeds 10^1803 (>= 1,804 decimal digits), constructs an explicit 8,135-prime normal odd prime set (40,733 digits) and an explicit 8,138-prime witness satisfying all seven local counterexample rules (40,751 digits), proves Lemma W, Lemma C, and the mod-8 factor-count congruence, and proves conditional transfer theorems reaching >= 8,138 prime factors and > 10^40747 (>= 40,748 decimal digits) from explicit depth-6 frontier certificate hypotheses. Main results in companion paper: 0 of 2 headline theorems purely in Lean 4 (0%) · 2 of 2 by Lean 4 + external exact-integer certificates. Existence of a Giuga counterexample remains open. Generated and checked by AI research agents built and directed by Tyler B. Hughes. No human mathematician has yet refereed the proof.",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "apache-2.0",
+  "language": "eng",
+  "keywords": [
+    "Lean 4",
+    "Mathlib",
+    "formalized mathematics",
+    "theorem proving",
+    "Giuga's conjecture",
+    "normal prime sets",
+    "edge-dual linear programming",
+    "number theory",
+    "math.NT",
+    "MSC 2020: 11A41",
+    "MSC 2020: 11Y11",
+    "MSC 2020: 90C05"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://mathdiscoveries.org/results/giuga",
+      "relation": "isSupplementTo",
+      "resource_type": "other"
+    },
+    {
+      "identifier": "https://doi.org/10.1080/00029890.1996.12004697",
+      "relation": "references",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.10408952",
+      "relation": "references",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.22085830",
+      "relation": "references",
+      "resource_type": "publication-preprint"
+    }
+  ],
+  "notes": "Unrefereed. Generated and checked by AI research agents built and directed by Tyler B. Hughes."
+}

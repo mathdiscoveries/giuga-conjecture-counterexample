@@ -1,0 +1,33 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "GiugaChallenge.unconditional_normal_set_575",
+    "GiugaChallenge.giuga_unconditional_578_primes",
+    "GiugaChallenge.giuga_unconditional_gt_10_pow_1803",
+    "GiugaChallenge.exists_normal_odd_prime_set_8135",
+    "GiugaChallenge.exists_ceiling_witness_8138",
+    "GiugaChallenge.lemma_w_edge_dual_count",
+    "GiugaChallenge.lemma_w_edge_dual_prod",
+    "GiugaChallenge.lemma_w_frontier_count",
+    "GiugaChallenge.lemma_w_refinement2_strict",
+    "GiugaChallenge.lemma_w_refinement2_route_a",
+    "GiugaChallenge.lemma_C_general",
+    "GiugaChallenge.odd_prime_8135_ge_83341",
+    "GiugaChallenge.giuga_reciprocity_rule",
+    "GiugaChallenge.giuga_residue_mod_8",
+    "GiugaChallenge.giuga_exactness_rule",
+    "GiugaChallenge.giuga_card_mod_eight",
+    "GiugaChallenge.lemma_C_91476",
+    "GiugaChallenge.cor_giuga_8138_primes",
+    "GiugaChallenge.cor_giuga_gt_10_pow_36083",
+    "GiugaChallenge.lemma_C_prod_gt_10_pow_446177",
+    "GiugaChallenge.cor_giuga_route_a_gt_10_pow_40747"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

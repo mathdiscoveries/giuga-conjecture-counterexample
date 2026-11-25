@@ -1,0 +1,8 @@
+{
+  "executed": false,
+  "mode": "dry_run",
+  "repo_url": "https://github.com/mathdiscoveries/giuga",
+  "save_api_url": "https://archive.softwareheritage.org/api/1/origin/save/git/url/https%3A%2F%2Fgithub.com%2Fmathdiscoveries%2Fgiuga/",
+  "browse_url": "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https%3A%2F%2Fgithub.com%2Fmathdiscoveries%2Fgiuga",
+  "note": "Public Software Heritage Save Code Now request is NOT submitted until the public GitHub repository exists and Tyler B. Hughes authorizes archival (`ourotrix palomar giuga -A`)."
+}

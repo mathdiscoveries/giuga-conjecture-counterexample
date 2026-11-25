@@ -1,0 +1,310 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+version: "v0.4"
+
+project:
+  name: "How Many Prime Factors Could a Counterexample to Giuga's Conjecture Have?"
+  description: >-
+    Lean 4 (v4.35.0) + Mathlib formalization of structural theorems, edge-dual
+    linear-programming relaxations (Lemma W and refinements), Lemma C, local
+    obstruction rules, unconditional counterexample lower bounds, explicit
+    ceiling witnesses, and conditional transfer theorems for Giuga's conjecture
+    (1950). Across 21 compared theorems (zero sorry, zero native_decide,
+    standard axioms only), Lean 4 proves unconditionally that every Giuga
+    counterexample has at least 578 distinct prime factors and exceeds 10^1803
+    (at least 1,804 decimal digits), constructs an explicit 8,135-prime normal
+    odd prime set (40,733 digits) and an explicit 8,138-prime witness
+    satisfying all seven local counterexample rules (40,751 digits), proves all
+    forms of Lemma W, Lemma C, and the mod-8 count congruence, and proves
+    conditional lifting theorems reaching >= 8,138 prime factors and > 10^40747
+    (>= 40,748 decimal digits) from explicit depth-6 frontier hypotheses.
+    Main results in the companion paper: 0 of 2 headline theorems purely in
+    Lean 4 (0%) · 2 of 2 by Lean 4 + external exact-integer certificates (all
+    15 prefixes below 17). Existence of a Giuga counterexample remains open.
+    Companion working paper, exact integer checker, and prior-work search log:
+    https://mathdiscoveries.org/results/giuga.
+  authors:
+    - "Tyler B. Hughes"
+  license: "Apache-2.0"
+  responsible_maintainers:
+    - "Tyler B. Hughes"
+
+classification:
+  arxiv: ["math.NT"]
+  msc2020: ["11A41", "11Y11", "90C05"]
+
+sources:
+  - title: "How Many Prime Factors Could a Counterexample to Giuga's Conjecture Have?"
+    authors:
+      - "Tyler B. Hughes"
+    id: "https://mathdiscoveries.org/results/giuga"
+    type: original-proof
+    location: "Companion page, working paper, exact integer checker, and prior-work search log at https://mathdiscoveries.org/results/giuga"
+    relationship: other
+    author_endorsement: participated
+    note: >-
+      All proof discovery, Lean 4 + Mathlib formalization, exact-integer
+      certificates, and internal adversarial reviews were produced by AI
+      research agents built and directed by Tyler B. Hughes. Logged prior-work
+      searches through 2026-11-22 (arXiv, zbMATH Open, OEIS, CORE, OpenAlex,
+      Zenodo, GitHub, MathOverflow, Math Stack Exchange, and Google Scholar)
+      did not find a stronger unconditional counterexample bound or edge-dual
+      certificate over tail conflict graphs; some cited secondary sources
+      remain unread and direct cited-by list pagination remains owed. No human
+      mathematician has yet refereed the proof.
+  - title: "Su una presumibile proprietà caratteristica dei numeri primi"
+    authors:
+      - "Giuseppe Giuga"
+    id: "https://zbmath.org/0045.01801"
+    type: paper
+    location: "Ist. Lombardo Sci. Lett., Rend., Cl. Sci. Mat. Natur., III. Ser. 14(83) (1951), 511-518"
+    relationship: background
+    note: >-
+      zbMATH review read (Zbl 0045.01801; also dated 1950 in secondary
+      literature); original Italian text unread [to check]. Origin of Giuga's
+      primality conjecture, the Carmichael + Giuga divisor reduction, and the
+      > 1,000-digit bound.
+  - title: "Note on a conjecture on prime numbers"
+    authors:
+      - "Edmondo Bedocchi"
+    id: "https://zbmath.org/0598.10018"
+    type: paper
+    location: "Riv. Mat. Univ. Parma, IV. Ser. 11 (1985), 229-236"
+    relationship: background
+    note: >-
+      Original Italian title: Nota ad una congettura sui numeri primi (Zbl
+      0598.10018). Primary text pp. 229-231 and 235 checked. Establishes the
+      > 1,700-digit bound and identifies the greedy normal odd prime sequence
+      crossing reciprocal sum 1 at 8,135 primes (rank 8,134).
+  - title: "Giuga's Conjecture on Primality"
+    authors:
+      - "D. Borwein"
+      - "J. M. Borwein"
+      - "P. B. Borwein"
+      - "R. Girgensohn"
+    id: "https://doi.org/10.1080/00029890.1996.12004697"
+    type: paper
+    location: "The American Mathematical Monthly 103(1) (1996), 40-50"
+    relationship: background
+    note: >-
+      Read in full (pp. 40-50). Proves the modulo-4 count congruence
+      m = v + 1 (mod 4), establishes 3,459 primes / 13,887 digits, and states
+      Open Problem 5 (36,069 digits / normal-set ceiling).
+  - title: "Computation of an improved lower bound to Giuga's primality conjecture"
+    authors:
+      - "Jonathan Borwein"
+      - "Christopher Maitland"
+      - "Matthew Skerritt"
+    id: "https://zbmath.org/1284.11002"
+    type: paper
+    location: "Integers 13 (2013), Paper A67"
+    relationship: background
+    note: >-
+      Read in full (Zbl 1284.11002; Zenodo mirror DOI
+      10.5281/zenodo.10408952). Prior published counterexample lower bound of
+      4,771 prime factors and 19,908 decimal digits (n > 10^19907) at depth
+      311 via prefix-only normal-set domination.
+  - title: "Characteristic-vector congruences for weak primary pseudoperfect and Giuga numbers"
+    authors:
+      - "Nikolaos Mavrotheris"
+    id: "https://doi.org/10.5281/zenodo.22085830"
+    type: preprint
+    location: "Zenodo preprint (2026)"
+    relationship: background
+    note: >-
+      Title page, abstract, introduction, and Theorem 1 read (full unimodular
+      lattice proof unread [to check]). States the modulo-8 count congruence
+      m = v + 1 (mod 8) for odd Giuga numbers; Giuga/UnconditionalAndDigits.lean
+      proves this congruence independently by an elementary mod-8 identity and
+      quadratic reciprocity.
+
+related_formalizations: []
+
+status:
+  scope: >-
+    Unconditionally proved in Lean 4 (v4.35.0) + Mathlib with standard axioms
+    only (zero sorry, zero native_decide, 128 axiom-audited declarations across
+    Giuga/Verify.lean, 21 compared theorems in Challenge.lean / Solution.lean):
+    (1) unconditional counterexample lower bounds >= 575 primes for normal odd
+    prime sets with sum(1/p) > 1, >= 578 distinct prime factors, and
+    n > 10^1803 (>= 1,804 decimal digits) for every Giuga counterexample;
+    (2) unconditional pure-kernel explicit witnesses for an 8,135-prime normal
+    odd prime set (10^40732 < prod G < 10^40733) and an 8,138-prime witness
+    satisfying all seven local Giuga rules simultaneously
+    (10^40750 < prod W < 10^40751);
+    (3) unconditional proofs of Lemma W (Form E count and product bounds,
+    Complete Frontier theorem, Refinement 2 strict log bound, Route (a) K7
+    linear lift), Lemma C (general form), the unconditional 8,135th odd prime
+    lower bound (>= 83,341), and all local obstruction rules (quadratic
+    reciprocity mod 4, residue mod 8, exactness at v = 1, and mod-8 count
+    congruence m = v + 1 mod 8);
+    (4) five explicitly parameterized conditional transfer theorems deriving
+    Lemma C >= 91,476 primes (and > 10^446177) for v >= 2, >= 8,138 prime
+    factors and > 10^36083 from hN1 alone, and > 10^40747 (>= 40,748 digits)
+    from hN1 plus the depth-6 Route (a) frontier certificate hypotheses.
+    Not discharged inside Lean: the 15-leaf depth-6 exact-integer dual
+    certificates for hN1 (N_1 >= 8,135) and Route (a) (> 10^40747), which are
+    verified externally by the deterministic exact-integer checker accompanying
+    the companion paper. Main results in companion paper: 0 of 2 headline
+    theorems purely in Lean 4 (0%) · 2 of 2 by Lean 4 + exact integer
+    certificates.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: ["propext", "Quot.sound", "Classical.choice"]
+
+automation:
+  methods:
+    - method: agent
+      models: []
+      framework: "AI research agent pipeline built and directed by Tyler B. Hughes"
+      tool_setup: >-
+        Autonomous builder, adversarial falsifier, and cross-model reviewer
+        agents formulated Lemma W and Lemma C, generated the GMP bitmask sieve
+        and radix-trie kernel proofs, wrote the Lean 4 + Mathlib formalization,
+        and audited axioms and statements.
+      cost:
+        wall_time: "not tracked"
+        spend_usd: "not tracked"
+        hardware: "local machine"
+      prompting_notes: "Goal-directed mathematical discovery and Lean 4 formalization."
+  spend_usd: "not tracked"
+  notes: >-
+    All proof discovery, Lean 4 + Mathlib formalization, exact-integer
+    certificates, and internal adversarial reviews were produced by AI research
+    agents built and directed by Tyler B. Hughes. No human mathematician has
+    yet refereed the proof.
+
+fidelity:
+  divergences: >-
+    The companion paper's two headline numerical theorems (>= 8,138 distinct
+    prime divisors and >= 40,748 decimal digits; exact normal-set minimum
+    8,135 primes / 40,733 digits) combine the Lean-verified structural
+    theorems, ceiling witnesses, and transfer rules with external exact-integer
+    dual certificates across all 15 normal prefixes below 17. Inside Lean 4
+    alone, the unconditional counterexample lower bounds are >= 578 distinct
+    prime factors and n > 10^1803 (via a 2-leaf depth-2 kernel certificate),
+    both ceiling witnesses (8,135 primes / 40,733 digits and 8,138 primes /
+    40,751 digits) are 100% unconditional, and the 8,138-prime / 36,084-digit /
+    40,748-digit theorems carry their frontier certificate hypotheses (hN1 and
+    hTailK/hCert) explicitly in their Lean types.
+
+review:
+  status: agent-reviewed
+  reviewers:
+    - "Internal adversarial falsifier and cross-model referee agents"
+  notes: >-
+    Checked by separate internal falsifier and referee agents and audited for
+    standard axioms only across all 128 declarations via Giuga/Verify.lean.
+    Independent mechanical Lean checking and automated editorial review are
+    recorded in Palomar's report. No human mathematician has yet refereed the
+    proof.
+
+alignment:
+  namespace: "GiugaChallenge"
+  statements:
+    - source: "Unconditional 575-prime normal-set lower bound (pure-kernel 2-leaf certificate)"
+      lean: "GiugaChallenge.unconditional_normal_set_575"
+      module: "Challenge"
+      status: proved
+      note: "Unconditional in Lean 4: every normal odd prime set with sum(1/p) > 1 has >= 575 elements."
+    - source: "Unconditional 578-prime Giuga counterexample lower bound"
+      lean: "GiugaChallenge.giuga_unconditional_578_primes"
+      module: "Challenge"
+      status: proved
+      note: "Unconditional in Lean 4: every Giuga counterexample has >= 578 distinct prime factors."
+    - source: "Unconditional 1,804-digit Giuga counterexample lower bound (n > 10^1803)"
+      lean: "GiugaChallenge.giuga_unconditional_gt_10_pow_1803"
+      module: "Challenge"
+      status: proved
+      note: "Unconditional in Lean 4: every Giuga counterexample satisfies 10^1803 < n."
+    - source: "Unconditional 8,135-prime normal-set ceiling witness (40,733 digits)"
+      lean: "GiugaChallenge.exists_normal_odd_prime_set_8135"
+      module: "Challenge"
+      status: proved
+      note: "Unconditional in Lean 4: exhibits G with |G| = 8,135, sum(1/p) > 1, and 10^40732 < prod G < 10^40733."
+    - source: "Unconditional 8,138-prime 7-rule local ceiling witness (40,751 digits)"
+      lean: "GiugaChallenge.exists_ceiling_witness_8138"
+      module: "Challenge"
+      status: proved
+      note: "Unconditional in Lean 4: exhibits W with |W| = 8,138 satisfying all 7 local rules and 10^40750 < prod W < 10^40751."
+    - source: "Lemma W, Form (E): edge-dual tail-count lower bound"
+      lean: "GiugaChallenge.lemma_w_edge_dual_count"
+      module: "Challenge"
+      status: proved
+      note: "Unconditional in Lean 4: edge-dual LP relaxation bounding tail prime count."
+    - source: "Lemma W, Form (E): edge-dual tail-product / log lower bound"
+      lean: "GiugaChallenge.lemma_w_edge_dual_prod"
+      module: "Challenge"
+      status: proved
+      note: "Unconditional in Lean 4: edge-dual LP relaxation bounding sum of log tail primes."
+    - source: "Complete Frontier Theorem for Lemma W Form (E) count certificates"
+      lean: "GiugaChallenge.lemma_w_frontier_count"
+      module: "Challenge"
+      status: proved
+      note: "Unconditional in Lean 4: aggregates leaf certificates over all normal prefixes below p_d."
+    - source: "Lemma W, Refinement 2 (strict log bound for mu > 0)"
+      lean: "GiugaChallenge.lemma_w_refinement2_strict"
+      module: "Challenge"
+      status: proved
+      note: "Unconditional in Lean 4: combined reciprocal and count-multiplier log lower bound."
+    - source: "Lemma W, Refinement 2 with Route (a) mod-4 linear lift"
+      lean: "GiugaChallenge.lemma_w_refinement2_route_a"
+      module: "Challenge"
+      status: proved
+      note: "Unconditional in Lean 4: lifts tail count K to routeALiftK under |P| = 2 (mod 4)."
+    - source: "Lemma C (general form): threshold-1 bound lifts to threshold-2 bound N_1 + q"
+      lean: "GiugaChallenge.lemma_C_general"
+      module: "Challenge"
+      status: proved
+      note: "Unconditional in Lean 4: rules out high-value branches (v >= 2)."
+    - source: "Unconditional 8,135th odd prime lower bound (>= 83,341)"
+      lean: "GiugaChallenge.odd_prime_8135_ge_83341"
+      module: "Challenge"
+      status: proved
+      note: "Unconditional in Lean 4 via 60-prime GMP bitmask sieve and SWAR popcount."
+    - source: "Quadratic-reciprocity local obstruction rule (k_3 mod 4 in {0, 1})"
+      lean: "GiugaChallenge.giuga_reciprocity_rule"
+      module: "Challenge"
+      status: proved
+      note: "Unconditional in Lean 4: count of prime factors p = 3 (mod 4) is 0 or 1 mod 4."
+    - source: "Modulo-8 residue rule (sum p = v + n mod 8)"
+      lean: "GiugaChallenge.giuga_residue_mod_8"
+      module: "Challenge"
+      status: proved
+      note: "Unconditional in Lean 4 for every Giuga counterexample of value v."
+    - source: "Exactness rule at value v = 1"
+      lean: "GiugaChallenge.giuga_exactness_rule"
+      module: "Challenge"
+      status: proved
+      note: "Unconditional in Lean 4: (sum 1/q) - 1 < 1/p for every prime divisor p of n."
+    - source: "Modulo-8 factor-count congruence (|P| = v + 1 mod 8)"
+      lean: "GiugaChallenge.giuga_card_mod_eight"
+      module: "Challenge"
+      status: proved
+      note: "Unconditional elementary Lean 4 proof via mod-8 sum-product identity and quadratic reciprocity."
+    - source: "Instantiated Lemma C (>= 91,476 primes for sum(1/p) > 2, parameterized by hN1)"
+      lean: "GiugaChallenge.lemma_C_91476"
+      module: "Challenge"
+      status: proved
+      note: "Conditional transfer theorem taking hN1 (N_1 >= 8,135) explicitly."
+    - source: "8,138-prime counterexample lower bound (parameterized by hN1)"
+      lean: "GiugaChallenge.cor_giuga_8138_primes"
+      module: "Challenge"
+      status: proved
+      note: "Conditional transfer theorem deriving >= 8,138 prime factors from hN1."
+    - source: "36,084-digit counterexample bound (n > 10^36083, parameterized by hN1 alone)"
+      lean: "GiugaChallenge.cor_giuga_gt_10_pow_36083"
+      module: "Challenge"
+      status: proved
+      note: "Conditional transfer theorem deriving 10^36083 < n from hN1 without log certificates."
+    - source: "Lemma C product bound (10^446177 < prod P for sum(1/p) > 2, parameterized by hN1)"
+      lean: "GiugaChallenge.lemma_C_prod_gt_10_pow_446177"
+      module: "Challenge"
+      status: proved
+      note: "Conditional transfer theorem ruling out v >= 2 in digit bounds from hN1."
+    - source: "40,748-digit counterexample bound (n > 10^40747, parameterized by hN1 and Route (a) frontier)"
+      lean: "GiugaChallenge.cor_giuga_route_a_gt_10_pow_40747"
+      module: "Challenge"
+      status: proved
+      note: "Conditional transfer theorem deriving 10^40747 < n from hN1 and the depth-6 Route (a) certificate hypotheses."
+
+acknowledgements: "Built on Lean 4 and Mathlib."
