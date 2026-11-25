@@ -9,5 +9,5 @@ authors:
 version: "v1.0.0"
 date-released: "2026-11-24"
 license: "Apache-2.0"
-repository-code: "https://github.com/mathdiscoveries/giuga"
+repository-code: "https://github.com/mathdiscoveries/giuga-conjecture-counterexample"
 url: "https://mathdiscoveries.org/results/giuga"
