@@ -94,9 +94,9 @@ sources:
       - "Jonathan Borwein"
       - "Christopher Maitland"
       - "Matthew Skerritt"
-    id: "https://zbmath.org/1284.11002"
+    id: "https://doi.org/10.5281/zenodo.10408952"
     type: paper
-    location: "Integers 13 (2013), Paper A67"
+    location: "Integers 13 (2013), Paper A67 (Zbl 1284.11002)"
     relationship: background
     note: >-
       Read in full (Zbl 1284.11002; Zenodo mirror DOI
